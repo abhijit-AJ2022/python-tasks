@@ -1,0 +1,19 @@
+#Task 2: Using the Math Module for Calculations
+#Square root of the number
+#Natural logarithm (log base e) of the number
+#Sine of the number (in radians)
+
+import math
+
+    #ask user to input a number
+number = int(input('Enter a number: '))
+if number <=0:
+    print('Please enter a number greater than 0 for valid calcullation ')
+else:
+    sqrt_result = math.sqrt(number)
+    log_result = math.log(number)
+    sine_result = math.sin(number)
+# Display the result
+print("Square Root: ",sqrt_result)
+print("log_result: ",log_result)
+print("sine_result: ",sine_result)
