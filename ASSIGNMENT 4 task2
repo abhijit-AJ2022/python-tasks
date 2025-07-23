@@ -1,0 +1,29 @@
+#Task 2: Write and Append Data to a File
+
+#get input to write
+user_input=str(input("Enter text to write to the file: "))
+
+#print that the the input is added to the file.
+fileA=open('output.txt','w')
+appending_file = fileA.write(user_input)
+fileA.close()
+
+#display that data is writen to the file.
+print('Data successfully written to output.txt.')
+
+#ask If want additional text need to add.
+user_input=str(input("\nEnter additional text to append: "))
+
+#print that the aditional input is append to the file
+fileA=open('output.txt','a')
+appending_file = fileA.write('\n'+ user_input)
+fileA.close()
+
+#display that, data is writen to the file.
+print('Data successfully appended')
+
+#then display the final content
+fileB=open('output.txt','r')
+reading_file=fileB.read()
+print('\nFinal content of output.text: '+'\n' + reading_file)
+fileB.close()
