@@ -1,0 +1,23 @@
+#ASSIGNMENT 5:
+#Module 6: Data Structures and Strings in Python
+
+#Task 1: Create a Dictionary of Student Marks
+
+
+
+
+# create student list.
+student_dictionary = {'Alice':'85','Ram':'71','Suresh':'79'}
+
+# ask for student name.
+student_name = input("Enter the student's name: ")
+
+# check for student name in database.
+if student_name in student_dictionary:
+
+# if available display name a nd number.
+    print(f"{student_name}'s, marks: {student_dictionary[student_name]}")
+
+#if not available display the note
+else:
+    print(f"Student not found.")
